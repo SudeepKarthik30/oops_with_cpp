@@ -1,0 +1,150 @@
+main{
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-color: rgb(22, 22, 75);
+    margin-top: 60px;
+    background-image: url(./img/profile-removebg.png) ,url(./img/background.png);
+    background-size: 101vh,cover;
+    background-repeat: no-repeat;
+    background-position: bottom, center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+
+main .main-intro h1{
+    font-size: 90px;
+    line-height: 100px;
+}
+
+main p{
+    font-size: 20px;
+    line-height: 40px;
+}
+
+main .main-intro p{
+    position: relative;
+    left: 2vh;
+    padding-top: 20px;
+}
+
+main a{
+    position: relative;
+    top:  30px;
+    left: 2vh;
+    font-size: 18px;
+    padding: 8px 18px;
+    width: fit-content;
+    background-color: #c13584;
+    border-radius: 7px;
+}
+
+main a:hover{
+    font-size: 17px;
+    color: aliceblue;
+}
+
+main .main-quotes p{
+    border-left: 4px solid #c13584;
+    padding-left: 20px;
+    margin: 40px 0;
+}
+
+main .main-intro{
+    position: relative;
+    right: 29vh;
+    bottom: 15vh;
+}
+ main .main-quotes p:nth-child(2){
+    position: relative;
+    left: 33.5vh;
+    top:13vh;
+    padding-bottom: 25px;
+ }
+
+ main .main-quotes p:nth-child(1){
+        position: relative;
+        left: 17vh;
+        bottom: 8vh;
+ }
+
+      /* Category section  */
+
+.index-category{
+    width: 100%;
+    padding: 40px 0;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+   column-gap: 40px;
+   flex-wrap: wrap;
+}
+
+.index-category p{
+    color: #111;
+    text-align: center;
+    padding-bottom: 40px;
+    flex-basis: 100%;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+.index-category-box{
+    width: 200px;
+    height: 200px;
+    background-color: #111;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    border-radius: 7px;
+    position: relative;
+    
+}
+
+.dark-overlay{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    background-color: black;
+    border-radius: 7px;
+    opacity: 0.5;
+    transition: all ease-in-out 200ms;
+}
+
+.index-category-box:hover .dark-overlay{
+    opacity: 0;
+}
+
+.index-category-box:nth-child(2){
+    background-image: url(./img/web.jpg);
+    background-size: cover;
+}
+
+.index-category-box:nth-child(3){
+    background-image: url(./img/education.jpg);
+    background-size: cover;
+}
+
+.index-category-box:nth-child(4){
+    background-image: url(./img/editing.jpg);
+    background-size: cover;
+}
+
+.index-category-box:nth-child(5){
+    background-image: url(./img/program.jpg);
+    background-size: cover;
+}
+
+
+.index-category-box h3{
+    line-height: 28px;
+    text-align: center;  
+    text-shadow: -2px 2px 8px #111;
+    z-index: 100;
+}
